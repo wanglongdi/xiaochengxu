@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container app e-dai">
+    <view class='login-wrap bg-white'>
+        <text class='error form-static text-center' wx:if="{{isHideError}}">{{errorText}}</text>
+        <view class='text-center login-notice'>
+            <image class='logo' src='../../images/e-logo.png'></image>
+            <text class='dis-block text-center text-gray'>使用手机号免费注册成为圣元会员</text>
+        </view>
+        <view class='form-body margin-top-80'>
+            <form bindsubmit="onSubmitForm">
+                <view class='form-group'>
+                    <input class='form-control' type='number' placeholder='请输入手机号' bindblur='onTelInput'/>
+                </view>
+                <view class='form-group lo-code'>
+                    <input class='form-control' type='number' placeholder='请输入验证码' bindblur="onCodeInput"></input>
+                    <button type='button' wx:if='{{isShow}}' class='btn none text-cyan' bindtap='bindBtnCode'>获取验证码</button>
+                    <button type='button' wx:else class='btn none text-cyan btn_no' >{{getmsg}}</button>
+                </view>
+                <view class='form-group checkbox-group margin-top-60'>
+                    <checkbox-group class="checkbox text-center text-gray" style='display: inline-block' bindchange='onCheckbox' data-index="{{index}}" data-checks="{{checkVal}}">
+                       <checkbox checked='{{checkVal}}'> 我已阅读同意</checkbox>
+                    </checkbox-group>
+                    <web-view src="https://mp.weixin.qq.com/"></web-view>
+                    <text class='text-cyan' bindtap="onNavTo">《e袋洗用户协议》</text>
+                </view>
+                <button class='btn cyan margin-top-40' formType='submit'>确定</button>
+            </form>
+        </view>
+    </view>
+</view>

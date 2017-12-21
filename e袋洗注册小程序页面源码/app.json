@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/edaixi_agreement/edaixi_agreement"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

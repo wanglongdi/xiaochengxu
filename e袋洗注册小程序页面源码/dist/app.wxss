@@ -1,0 +1,63 @@
+page{
+    font-size:28rpx;
+}
+.btn{
+    font-size:28rpx;
+    padding:24rpx 24rpx;
+    line-height: 1.5;
+}
+.btn::after{
+    display: none;
+}
+
+.btn.none{
+    background-color:transparent;
+}
+.btn.blue{
+    background-color: #4394ed;
+    color:#fff;
+}
+.btn.cyan{
+    background-color: #00dbf5;
+    color:#fff;
+}
+.text-blue{color:#4394ed;}
+.text-gray{color:#808080;}
+.text-cyan{color:#00dbf5;}
+.bg-white{background-color:#fff;}
+
+
+.text-center{
+    text-align: center;
+}
+.dis-block{
+    display: block;
+}
+.margin-top-10{margin-top:10rpx;}
+.margin-top-20{margin-top:20rpx;}
+.margin-top-30{margin-top:30rpx;}
+.margin-top-40{margin-top:40rpx;}
+.margin-top-50{margin-top:50rpx;}
+.margin-top-60{margin-top:60rpx;}
+.margin-top-70{margin-top:70rpx;}
+.margin-top-80{margin-top:80rpx;}
+.form-body .form-group{
+    margin-bottom:30rpx;
+    position: relative;
+}
+
+wx-input.form-control{
+    height:auto;
+    padding: 16rpx 24rpx;
+    line-height: 1.5;
+    font-size: 28rpx;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 8rpx;
+    min-height:10rpx;
+}
+.btn_no{
+  cursor: none;
+}

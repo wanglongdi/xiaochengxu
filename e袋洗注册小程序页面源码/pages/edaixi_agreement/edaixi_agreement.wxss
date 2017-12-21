@@ -1,0 +1,33 @@
+/* pages/edaixi_agreement/edaixi_agreement.wxss */
+.container{
+  width: 100%;
+  padding: 0 30rpx;
+  font-size: 12px;
+  color: #666;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+.tit{
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  margin: 20px 0;
+}
+.agreement{
+  margin-bottom: 10px;
+}
+.agreement .tt{
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+}
+.agreement .con{
+  margin-top: 10px;
+  text-indent: 2em;
+}
+.agreement .fd{
+  font-weight: bold;
+
+}
